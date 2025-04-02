@@ -151,7 +151,7 @@ GEMINI_API_KEY="your-gemini-api-key"
 
 ## 作者
 
-- Reece
+Reece
 
 ## 授權
 
