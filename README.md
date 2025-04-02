@@ -40,8 +40,6 @@
 - `--gemini`, `-g`：使用 Gemini AI 優化 PR 描述
 - `--en`：使用英文生成 PR 描述
 - `--zh-tw`：使用繁體中文（臺灣用語）生成 PR 描述（預設）
-- `-p "自訂提示"`：簡短版設定客製化的 AI 提示
-- `-rp "自訂提示"`：簡短版完全替換預設提示
 - `--no-full-diff`：不包含完整的差異內容
 - `--debug`：啟用除錯模式，保存中間處理過程到文件
 
@@ -68,12 +66,6 @@
 # 使用繁體中文生成描述
 ./pr_desc_generator.sh main --zh-tw
 
-# 添加自訂 AI 提示
-./pr_desc_generator.sh main -p "請突出顯示性能改進"
-
-# 完全替換預設提示
-./pr_desc_generator.sh main -rp "只保留標題和摘要"
-
 # 不包含完整的程式碼差異內容
 ./pr_desc_generator.sh main --no-full-diff
 
@@ -88,8 +80,8 @@
 
 腳本使用模組化設計，主要配置文件位於：
 
-- `pr_desc_generator/configs/ai_config.sh`：AI 模型配置文件
-- `pr_desc_generator/configs/pr_patterns.sh`：PR 描述模板配置文件
+- `ai_config.sh`：AI 模型配置文件
+- `pr_patterns.sh`：PR 描述模板配置文件
 
 ### AI API 密鑰配置
 
@@ -118,8 +110,6 @@ GEMINI_API_KEY="your-gemini-api-key"
 ## 模組結構
 
 - `pr_desc_generator.sh`：主入口腳本
-- `ai_config.sh`：AI 配置文件
-- `pr_patterns.sh`： 描述風格和格式配置文件
 - `src/main_wrapper.sh`：主腳本包裝器
 - `src/main.sh`：主要流程控制
 - `src/utils.sh`：通用工具函數
