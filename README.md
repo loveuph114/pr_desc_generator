@@ -94,10 +94,6 @@ OPENAI_API_KEY="your-openai-api-key"
 GEMINI_API_KEY="your-gemini-api-key"
 ```
 
-### PR 模板自訂
-
-在 `pr_patterns.sh` 中可以自訂 PR 描述的風格和格式。
-
 ## 工作原理
 
 1. 解析命令行參數並設定相應的配置
@@ -142,6 +138,7 @@ GEMINI_API_KEY="your-gemini-api-key"
 ## 作者
 
 Reece
+~~基本上都是 AI 寫的~~
 
 ## 授權
 
