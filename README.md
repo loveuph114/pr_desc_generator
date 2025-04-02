@@ -1,4 +1,4 @@
-# PR 描述產生器 (pr_desc_generator_v2.sh)
+# PR 描述產生器 (pr_desc_generator.sh)
 
 這是一款高效的 Pull Request 描述自動生成工具，使用 Git 差異分析和先進的 AI 技術，幫助開發者快速產生結構清晰、內容完整的 PR 描述。
 
